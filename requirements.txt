@@ -3,3 +3,16 @@ numpy
 pandas
 pydeck
 streamlit
+streamlit-chat
+PIL
+os
+requests
+bs4
+opencv-python
+python-pptx
+pypdf2
+googletrans
+qrcode
+urllib
+json
+textwrap
