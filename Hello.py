@@ -1,3 +1,14 @@
 import streamlit as st
 from streamlit_chat import message
-message("heelo!", is_user=True)
+import qrcode
+import textwrap
+import time
+import urllib
+import cv2
+from bs4 import Beautifulsoup
+from pptx.utill import Pt
+from pptx import Presentation
+import datetime
+message("hello!", is_user=True)
+time.sleep(5)
+message(hello!)
