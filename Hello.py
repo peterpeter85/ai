@@ -4,7 +4,6 @@ import qrcode
 import textwrap
 import time
 import urllib
-import cv2
 from bs4 import Beautifulsoup
 from pptx.utill import Pt
 from pptx import Presentation
