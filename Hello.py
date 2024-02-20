@@ -18,7 +18,7 @@ if submitted and user:
   else:
     st.session_state.ai.append("등록된 명령이 아닙니다.")
   for index, pas in enumerate(st.session_state.ai):
-    message(user,is_user=True)
+    message(st.session_state.past[index],is_user=True)
     message(pas)
     
     
