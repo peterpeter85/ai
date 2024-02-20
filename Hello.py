@@ -4,8 +4,6 @@ import qrcode
 import textwrap
 import time
 import urllib
-from pptx.utill import Pt
-from pptx import Presentation
 import datetime
 message("hello!", is_user=True)
 time.sleep(5)
