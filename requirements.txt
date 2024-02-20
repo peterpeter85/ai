@@ -4,14 +4,9 @@ pandas
 pydeck
 streamlit
 streamlit-chat
-os
-requests
 bs4
 opencv-python
 python-pptx
 pypdf2
 googletrans
 qrcode
-urllib
-json
-textwrap
