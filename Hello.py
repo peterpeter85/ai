@@ -3,7 +3,7 @@ from streamlit_chat import message
 import qrcode
 import textwrap
 import time
-from PIL impot Image
+from PIL import Image
 im=Image("large(1).png")
 st.image(im)
 if "ai" not in st.session_state:
