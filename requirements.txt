@@ -10,3 +10,4 @@ python-pptx
 pypdf2
 googletrans
 qrcode
+pillow
