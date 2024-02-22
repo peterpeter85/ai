@@ -8,7 +8,7 @@ from PIL import Image
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 im=Image.open("large.png")
 st.sidebar.title("Our logo")
-st.sidebar.image(im, width=350, caption="chatchat's logo")
+st.sidebar.image(im, width=250, caption="chatchat's logo")
 if "ai" not in st.session_state:
   st.session_state["ai"]=[]
 with st.form("you:", clear_on_submit=True):
