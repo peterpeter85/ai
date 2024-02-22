@@ -3,7 +3,9 @@ from streamlit_chat import message
 import qrcode
 import textwrap
 import time
+import os
 from PIL import Image
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 im=Image("large(1).png")
 st.image(im)
 if "ai" not in st.session_state:
