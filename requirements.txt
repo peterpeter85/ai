@@ -11,4 +11,3 @@ pypdf2
 googletrans
 qrcode
 pillow
-chatterbot
