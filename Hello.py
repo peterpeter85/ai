@@ -29,11 +29,9 @@ def weather(location, unit="섭씨"):
                       "대구": "Daegu", "부산": "Busan", "광주": "Gwangju",
                       "수원": "Suwon", "파리": "Paris", "뉴욕": "New York"}
         city = city_names[location] # 한글 도시 이름을 영어로 변경
-    
-    WEATHER_API_KEY = os.environ["WEATHER_API_KEY"] # API 키 지정
 
     url = "http://api.weatherapi.com/v1/current.json"
-    parameters = {"key":WEATHER_API_KEY, "q":city}
+    parameters = {"key":"dbf7e1eba47640cabf0103552242203", "q":city}
 
     r = requests.get(url, params=parameters)
     current_weather = r.json()
