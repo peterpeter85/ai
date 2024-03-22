@@ -5,6 +5,31 @@ import textwrap
 import time
 import os
 from PIL import Image
+from spellchecker import SpellChecker
+
+def spell_check(text):
+    # 맞춤법 검사기 객체 생성
+    spell = SpellChecker()
+    # 문장을 단어 단위로 분할하여 잘못된 단어를 찾음
+    words = text.split()
+    misspelled = spell.unknown(words)
+    # 잘못된 단어를 교정하여 교정된 문장을 생성
+    corrected_text = ''
+    for word in words:
+        if word in misspelled:
+            corrected_text += spell.correction(word) + ' '
+        else:
+            corrected_text += word + ' '
+    return corrected_text.strip()
+
+# 텍스트 입력
+text = "안녕하세여. 한국어 맞춤법 검사기 테스트 입니다."
+# 맞춤법 검사
+checked_text = spell_check(text)
+# 결과 출력
+print("원본 텍스트:", text)
+print("교정된 텍스트:", checked_text)
+
 with st.sidebar:
     # Streamlit app title
     st.sidebar.title("Chatchat's logo")
@@ -23,7 +48,7 @@ if submitted and user:
   message(user,is_user=True)
   if "what"and"is"and"your"and"name"in user.lower():
     message("Hello!I am Chatchat.What may I help you today?")
-  elif "make"and"me"and"a"and"python"and"code"and"that"or "give"and"me"and"an"and"example"and"of"and"a"and"python"and"code"in user.lower():
+  elif :
       message("This is not ready yet.")
   else:
     message("This comand is not on my database.Try again.")
