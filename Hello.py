@@ -7,7 +7,7 @@ import os
 from PIL import Image
 from spellchecker import SpellChecker
 
-def spell_check(text):
+def check(text):
     # 맞춤법 검사기 객체 생성
     spell = SpellChecker()
     # 문장을 단어 단위로 분할하여 잘못된 단어를 찾음
@@ -21,15 +21,6 @@ def spell_check(text):
         else:
             corrected_text += word + ' '
     return corrected_text.strip()
-
-# 텍스트 입력
-text = "안녕하세여. 한국어 맞춤법 검사기 테스트 입니다."
-# 맞춤법 검사
-checked_text = spell_check(text)
-# 결과 출력
-print("원본 텍스트:", text)
-print("교정된 텍스트:", checked_text)
-
 with st.sidebar:
     # Streamlit app title
     st.sidebar.title("Chatchat's logo")
@@ -44,12 +35,12 @@ with st.form("you:", clear_on_submit=True):
   user=st.text_input("")
   submitted=st.form_submit_button("✅")
 if submitted and user:
-
+  user=check(user)
   message(user,is_user=True)
-  if "what"and"is"and"your"and"name"in user.lower():
-    message("Hello!I am Chatchat.What may I help you today?")
-  elif :
-      message("This is not ready yet.")
+  if check("넌")and check("이름이")and check("뭐야")in user.lower():
+    message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
+  elif check("날씨 알려줘")in user.lower():
+      message("이 기능은 미완성입니다".)
   else:
     message("This comand is not on my database.Try again.")
   
