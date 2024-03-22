@@ -59,8 +59,7 @@ def weather(location, unit="섭씨"):
             "local time": localtime
     }
     
-    return json.dumps(weather_info, ensure_ascii=False) # JSON 형식으로 반환  
-
+    return weather_info
 
 with st.form("you:", clear_on_submit=True):
   user=st.text_input("")
