@@ -71,7 +71,7 @@ if submitted and user:
   message(user,is_user=True)
   if "넌"and"이름이"and "뭐야"in user.lower():
     message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
-  elif check("날씨 알려줘")in user.lower():
+  elif "날씨 알려줘"in user.lower():
       message("네, 원하는 지역을 입력해주세요.")
       if submitted and user:
           a=weather(user)
