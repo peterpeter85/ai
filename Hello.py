@@ -73,10 +73,12 @@ if submitted and user:
     message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
   elif "날씨 알려줘"in user.lower():
       message("네, 원하는 지역을 입력해주세요.")
-      time.sleep(3)
-      if submitted and user:
-          a=weather(user)
-          message(f"현재 {user}지역의 날씨:{a}")
+      with st.form("", clear_on_submit=True):
+          ser=st.text_input("")
+          submitt=st.form_submit_button("날씨 정보 검색")
+      if submitt and uer:
+         a=weather(user)
+         message(f"현재 {user}지역의 날씨:{a}")
   else:
     message("This comand is not on my database.Try again.")
   
