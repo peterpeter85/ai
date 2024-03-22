@@ -75,7 +75,7 @@ if submitted and user:
       message("네, 원하는 지역을 입력해주세요.")
       with st.form("", clear_on_submit=True):
           ser=st.text_input("")
-          submitt=st.form_submit_button("👌")
+          submitt=st.form_submit_button("")
       if submitt and uer:
          a=weather(user)
          message(f"현재 {user}지역의 날씨:{a}")
