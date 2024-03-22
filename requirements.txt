@@ -1,4 +1,4 @@
--U spellchecker
+pyspellchecker
 altair
 numpy
 pandas
