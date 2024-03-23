@@ -39,7 +39,6 @@ if id in ["peterpeter85@mylittlechatchat.streamlit.app"] and password in ["https
             message("안녕하세요 성윤님.저는 챗챗입니다.무엇을 도와드릴까요?")
         elif "안녕"== user.lower():
             message("네 안녕하세요 성윤님.")
-        elif ""
         else:
             message("This comand is not on my database.Try again.")
 if id in ["public@mylittlechatchat.streamlit.app"] and password in ["public"]:
