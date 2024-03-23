@@ -35,6 +35,11 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
             message("네 몰론이죠!")
             st.image(Image.open("large.png"))
+        elif "신나는"and"노래"and"틀어줘":
+            message("네 신나는 노래를 틀어드리겠습니다.아래는 노래 재생버튼 입나다.")
+            st.audio("r.mp3", format="audio/mp3")
+            st.audio("a.mp3", format="audio/mp3")
+            st.audio("b.mp3", format="audio/mp3")
         else:
             message("This comand is not on my database.Try again.")
   
