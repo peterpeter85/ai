@@ -22,7 +22,7 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         submitted=st.form_submit_button("✅")
     if submitted and user:
         message(user,is_user=True)
-        if "넌"and"이름이"and "뭐야"in user.lower():
+        if "넌"and"누구야"or "넌"and"이름이"and"뭐야"or"너"and"의"and"이름을"and"알고"and"싶어" or"넌"and"대체"and"누구야"in user:
             message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
         elif "안녕"in user.lower():
             message("네 안녕하세요.")
@@ -36,9 +36,10 @@ if id in ["peterpeter85@mylittlechatchat.streamlit.app"] and password in ["https
     if submitted and user:
         message(user,is_user=True)
         if "넌"and"이름이"and "뭐야"in user.lower():
-            message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
-        elif "안녕"in user.lower():
-            message("네 안녕하세요.")
+            message("안녕하세요 성윤님.저는 챗챗입니다.무엇을 도와드릴까요?")
+        elif "안녕"== user.lower():
+            message("네 안녕하세요 성윤님.")
+        elif ""
         else:
             message("This comand is not on my database.Try again.")
 if id in ["public@mylittlechatchat.streamlit.app"] and password in ["public"]:
