@@ -33,7 +33,8 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         elif "안녕"== user:
             message("네 안녕하세요.")
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
-            message(st.image(Image.open("large.png")))
+            message("네 몰론이죠!")
+            st.image(Image.open("large.png"))
         else:
             message("This comand is not on my database.Try again.")
   
