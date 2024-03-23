@@ -22,7 +22,9 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         submitted=st.form_submit_button("✅")
     if submitted and user:
         message(user,is_user=True)
-        if "넌"and"누구야"or "넌"and"이름이"and"뭐야"in user:
+        if "넌"and"누구야"in user:
+            message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요")
+        elif "넌"and"이름이"and"뭐야" in user:
             message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요")
         elif "너"and"의"and"이름을"and"알고"and"싶어"in user:
             message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
