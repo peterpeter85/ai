@@ -34,7 +34,7 @@ if id in ["public user"]and password in ["public user"]:
             message("네 안녕하세요.")
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
             message("네 몰론이죠!")
-            st.image(Image.open("large.png")
+            st.image(Image.open("large.png"))
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
             st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
