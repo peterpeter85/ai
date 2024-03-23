@@ -72,7 +72,7 @@ if submitted and user:
       message("네, 원하는 지역을 입력해주세요.")
       ser=st.text_input("")
       if ser:
-         a=weather(ser)
+         a=weather(location=ser)
          message(f"현재 {ser}지역의 날씨:{a}")
   else:
     message("This comand is not on my database.Try again.")
