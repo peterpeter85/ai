@@ -34,12 +34,7 @@ if id in ["public user"]and password in ["public user"]:
             message("네 안녕하세요.")
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
             message("네 몰론이죠!")
-            st.image(Image.open("large.png"))
-        elif "신나는"and"노래"and"틀어줘"and ""in user:
-            message("네 신나는 노래를 틀어드리겠습니다.아래는 노래 재생버튼 입나다.")
-            st.audio("r.mp3", format="audio/mp3")
-            st.audio("a.mp3", format="audio/mp3")
-            st.audio("b.mp3", format="audio/mp3")
+            st.image(Image.open("large.png")
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
             st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
@@ -66,11 +61,6 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
             message("네 몰론이죠!")
             st.image(Image.open("large.png"))
-        elif "신나는"and"노래를"and"틀어줘"in user:
-            message("네 신나는 노래를 틀어드리겠습니다.아래는 노래 재생버튼 입나다.")
-            st.audio("r.mp3", format="audio/mp3")
-            st.audio("a.mp3", format="audio/mp3")
-            st.audio("b.mp3", format="audio/mp3")
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
             st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
@@ -98,11 +88,6 @@ if id in ["peterpeter85@mylittlechatchat.streamlit.app"] and password in ["https
         elif "너"and"의"and"로고"and"를"and"보여줘" in user:
             message("네 몰론이죠!")
             st.image(Image.open("large.png"))
-        elif "신나는"and"노래를"and"틀어줘":
-            message("네 신나는 노래를 틀어드리겠습니다.아래는 노래 재생버튼 입나다.")
-            st.audio("r.mp3", format="audio/mp3")
-            st.audio("a.mp3", format="audio/mp3")
-            st.audio("b.mp3", format="audio/mp3")
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
             st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
