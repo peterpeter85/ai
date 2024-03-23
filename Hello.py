@@ -40,6 +40,11 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
             st.audio("r.mp3", format="audio/mp3")
             st.audio("a.mp3", format="audio/mp3")
             st.audio("b.mp3", format="audio/mp3")
+        elif "고양이"and"영상"and"틀어줘":
+            message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
+            st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
+            st.video("https://www.youtube.com/shorts/PMBrH57XDZw", format="video/mp4")
+            st.video("https://www.youtube.com/shorts/JcXNnc3ygsU", format="video/mp4")
         else:
             message("This comand is not on my database.Try again.")
   
