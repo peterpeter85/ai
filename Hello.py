@@ -24,8 +24,10 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         message(user,is_user=True)
         if "넌"and"누구야"or "넌"and"이름이"and"뭐야"or"너"and"의"and"이름을"and"알고"and"싶어" or"넌"and"대체"and"누구야"in user:
             message("안녕하세요.저는 챗챗입니다.무엇을 도와드릴까요?")
-        elif "안녕"in user.lower():
+        elif "안녕"== user:
             message("네 안녕하세요.")
+        elif "너"and"의"and"로고"and"를"and"보여줘"in user:
+            message(Image.open("large.png"))
         else:
             message("This comand is not on my database.Try again.")
   
