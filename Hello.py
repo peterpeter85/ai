@@ -37,9 +37,7 @@ if id in ["public user"]and password in ["public user"]:
             st.image(Image.open("large.png"))
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
-            st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/PMBrH57XDZw", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/JcXNnc3ygsU", format="video/mp4")
+            st.video("https://www.youtube.com/watch?v=FhA37Sw4j8w", format="video/mp4")
         else:
             message("This comand is not on my database.Try again.")
 if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger1234"]:
@@ -63,9 +61,7 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
             st.image(Image.open("large.png"))
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
-            st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/PMBrH57XDZw", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/JcXNnc3ygsU", format="video/mp4")
+            st.video("https://www.youtube.com/watch?v=FhA37Sw4j8w", format="video/mp4")
         else:
             message("This comand is not on my database.Try again.")
   
@@ -90,9 +86,7 @@ if id in ["peterpeter85@mylittlechatchat.streamlit.app"] and password in ["https
             st.image(Image.open("large.png"))
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
-            st.video("https://www.youtube.com/shorts/1t7Adam0-y0", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/PMBrH57XDZw", format="video/mp4")
-            st.video("https://www.youtube.com/shorts/JcXNnc3ygsU", format="video/mp4")
+            st.video("https://www.youtube.com/watch?v=FhA37Sw4j8w", format="video/mp4")
         else:
             message("This comand is not on my database.Try again.")
 
