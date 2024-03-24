@@ -63,9 +63,6 @@ if id in ["tiger1234@mylittlechatchat.streamlit.app"] and password in ["tiger123
         elif "고양이"and"영상을"and"틀어줘"in user:
             message("네 고양이 영상을를 틀어드리겠습니다.아래는 영상 재생버튼 입나다.")
             st.video("https://www.youtube.com/watch?v=FhA37Sw4j8w", format="video/mp4")
-        elif "웹"==user:
-            webbrowser.open("https://www.naver.com")
-        else:
             message("This comand is not on my database.Try again.")
   
 if id in ["peterpeter85@mylittlechatchat.streamlit.app"] and password in ["https://mylittlechatchat.streamlit.app"]:
